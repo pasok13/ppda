@@ -194,7 +194,7 @@
 			// draw labels
 			ctx.save();
 			ctx.fillStyle = "black";
-			ctx.font = "bold " + labelFontSize + "px Arial";
+			ctx.font = "bold " + labelFontSize + "px Helvetica";
 			ctx.textAlign = "center";
 			for (var i = 0; i < curStats.length; i++) { 
 			
