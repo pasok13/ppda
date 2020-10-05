@@ -206,14 +206,14 @@
 					ctx.rotate(rad-Math.PI/2);
 					ctx.fillText(curStats[i].statName, 0, r+20);
 					for(var j = 0; j < 9; j++) {
-						ctx.font = "bold " + valueFontSize + "px Arial";
+						ctx.font = "bold " + valueFontSize + "px Helvetica";
 						ctx.fillText(Math.round((curStats[i].statMin+j*(curStats[i].statMax-curStats[i].statMin)/8)*1000)	/	1000, 0	, (r/(numrings*2))*(j+1)+lw+3);
 					}
 				} else {
 					ctx.rotate(rad+Math.PI/2);
 					ctx.fillText(curStats[i].statName, 0, -r-15);
 					for(var j = 0; j < 9; j++) {
-						ctx.font = "bold " + valueFontSize + "px Arial";
+						ctx.font = "bold " + valueFontSize + "px Helvetica";
 						ctx.fillText(Math.round((curStats[i].statMin+j*(curStats[i].statMax-curStats[i].statMin)/8)*1000)	/	1000, 0	, -(r/(numrings*2))*(j+1)-lw+valueFontSize/2);
 					}
 				}
@@ -334,7 +334,7 @@
 					<option value="rgba(250, 140, 5, 0.6)">Orange</option>
 					<option value="rgba(128, 0, 128, 0.6)">Purple</option>
 					<option value="rgba(225, 0, 0, 0.6)">Red</option>
-					<option value="rgba(140, 0, 0, 0.6)">Burgundy Red</option>
+					<option value="rgba(140, 0, 0, 0.6)"> Red</option>
 					<option value="rgba(250, 250, 5, 0.6)">Yellow</option>
 				</select>
 			</form>
